@@ -1,11 +1,11 @@
-#Dimensionality Reduction in Images  
+# Dimensionality Reduction in Images  
 
 This project aims to implement **dimensionality reduction methods in images**, converting color images to **grayscale** and performing **binarization** (black and white).  
 The approach used **does not rely on pre-built libraries** for this processing, ensuring an implementation from scratch.  
 
 ---
 
-##Project Objectives  
+## Project Objectives  
 
 - Create a **manual function** for converting color images to **grayscale**.  
 - Create a **manual function** to binarize the image (convert to **black and white**).  
@@ -15,7 +15,7 @@ The approach used **does not rely on pre-built libraries** for this processing, 
 
 ---
 
-##Project Structure  
+## Project Structure  
 
 📁 `data/input/` - Folder containing color images for testing.  
 📁 `data/output/` - Processed results (grayscale and binarized images).  
@@ -24,16 +24,16 @@ The approach used **does not rely on pre-built libraries** for this processing, 
 
 ---
 
-##Implementation  
+## Implementation  
 
-###**Grayscale Conversion**  
+### **Grayscale Conversion**  
 The conversion is based on the **luminance formula**:  
   
   0.299 * R + 0.587 * G + 0.114 * B  
   
 This generates a monochromatic image representing the brightness intensity of each pixel.  
 
-###**Image Binarization**  
+### **Image Binarization**  
 Binarization applies a **fixed threshold (128)**:  
 - Pixels above 128 → **White (255)**  
 - Pixels below 128 → **Black (0)**  
@@ -42,7 +42,7 @@ This process enhances contours and important shapes in the image.
 
 ---
 
-##How to Run the Code on Google Colab  
+## How to Run the Code on Google Colab  
 
 1. **Create a notebook in Colab**.  
 2. **Upload images to `/content/data/input/`**.  
@@ -53,17 +53,17 @@ For more details, check the Jupyter Notebook code.
 
 ---
 
-##Challenges Faced and Solutions  
+## Challenges Faced and Solutions  
 
-###**Loss of Information in Grayscale Conversion**  
+### **Loss of Information in Grayscale Conversion**  
  The equation was adjusted to correctly weight the RGB channels and retain important details.  
 
-###**Threshold Adjustment in Binarization**  
+### **Threshold Adjustment in Binarization**  
  The value **128** was chosen as the default but can be dynamically adjusted based on the image histogram.  
 
 ---
 
-##Technologies Used  
+## Technologies Used  
 
 - **Python** - The main programming language of the project.  
 - **Matplotlib** - For visualizing images before and after processing.  
@@ -72,7 +72,7 @@ For more details, check the Jupyter Notebook code.
 
 ---
 
-##Contributions  
+## Contributions  
 
  Want to contribute to the project? Follow the steps below:  
 
